@@ -5,7 +5,7 @@ func main() {
 	// card := newCard()
 	// cards := deck{newCard(), "Ace of Diamonds"}
 	// cards = append(cards, "Six of Spades")
-	cards := newDeck()
+	// cards := newDeck()
 
 	// cards.print()
 	// hand, remCards := deal(cards, 5)
@@ -13,7 +13,10 @@ func main() {
 	// hand.print()
 	// remCards.print()
 
-	cards.saveToFile("my_cards")
+	// cards.saveToFile("my_cards")
+
+	cards := readFromFile("my_cards")
+	cards.print()
 }
 
 func newCard() string {
