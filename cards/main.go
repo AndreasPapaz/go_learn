@@ -7,11 +7,13 @@ func main() {
 	// cards = append(cards, "Six of Spades")
 	cards := newDeck()
 
-	cards.print()
-	hand, remCards := deal(cards, 5)
+	// cards.print()
+	// hand, remCards := deal(cards, 5)
 
-	hand.print()
-	remCards.print()
+	// hand.print()
+	// remCards.print()
+
+	cards.saveToFile("my_cards")
 }
 
 func newCard() string {
